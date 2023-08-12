@@ -1,0 +1,130 @@
+/* Remove margin from the body element */
+body, h1, h2, h3, h4, h5, h6, p, a {
+    font-family: 'JetBrains Mono', monospace;
+    color: #333; /* Set the default color for text and links */
+    text-decoration: none; /* Remove underline from links */
+}
+body {
+  margin: 0;
+}
+
+/* Style for the top bar */
+.topbar {
+  background-color: #333;
+  overflow: hidden;
+  margin: 0; /* Remove margin */
+}
+
+/* Style for the top bar links */
+.topbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  transition: background-color 0.3s; /* Add transition for smooth effect */
+}
+
+.chosen {
+  background-color: #555; /* Darken background color on hover */
+}
+
+.topbar a:hover {
+  background-color: #555; /* Darken background color on hover */
+}
+
+/* Clear floats after the links */
+.topbar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .topbar a {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Center align the content */
+.content-container {
+  max-width: 800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center align the container */
+  padding: 20px; /* Add some padding for spacing */
+}
+
+/* Center align the footer */
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Make the <h1> element bigger */
+h1 {
+  font-size: 36px; /* You can adjust the value as needed */
+}
+
+/* Reduce the margin above the <h2> element */
+#contact h2 {
+  margin-bottom: 0; /* Adjust the value to reduce the space */
+}
+
+#contact ul {
+  margin-top: 0; /* Adjust the value to reduce the space */
+}
+
+#contact a:hover {
+  background-color: #333;
+  color: white;
+}
+
+#about a:hover {
+  background-color: #333;
+  color: white;
+}
+
+#Posts {
+    margin-top: 20px;
+}
+
+.post {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.post h2 {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.post p {
+    margin-top: 0;
+}
+
+.post .date {
+    color: #999;
+    text-align: right;
+}
+
+#Posts a:hover {
+background-color: #333;
+color: white;
+}
+
+.code-block {
+    border: 1px solid #ccc;
+    padding: 10px; /* Add some padding to separate the border from the code */
+    overflow: auto; /* Add overflow to allow scrolling if needed */
+    border-radius: 8px; /* Round out the corners */
+    background-color: #f5f5f5; /* Make the inside slightly darker */
+    margin: 10px 0; /* Adjust the top and bottom margin */
+}
+
+/* Adjust margin-top for the <code> element inside <pre> */
+.code-block pre code {
+    margin: 0; /* Adjust as needed */
+}
