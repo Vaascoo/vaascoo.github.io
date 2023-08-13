@@ -16,13 +16,13 @@
     <div class="content-container">
         <section id="Posts">
             <h1>Posts</h1>
-            
+            {% for post in posts %}
             <div class="post">
-              <h2><a href="/posts/post1.html">Post 1 title</a></h2>
-                <p>This is the post 1 sample</p>
-                <p class="date">13/08/23</p>
+              <h2><a href="/posts/{{ post.out }}">{{ post.title }}</a></h2>
+                <p>{{ post.sample }}</p>
+                <p class="date">{{ post.date }}</p>
             </div>
-            
+            {% endfor %}
         </section>
         <footer>
             <p>&lt;gpg key&gt;</p>

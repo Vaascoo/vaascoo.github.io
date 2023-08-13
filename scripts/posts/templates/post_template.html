@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>vaascoo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/icons.css">
+    <link rel="stylesheet" href="../css/highlight.css">
+</head>
+<body>
+    <div class="topbar">
+      <a href="/index.html">About</a>
+      <a href="/posts.html">Blog</a>
+    </div>
+    <div class="content-container">
+      <section id="Post">
+        {{ content|safe }}
+      </section>
+      <footer>
+          <p>&lt;gpg key&gt;</p>
+          <p>Vasco Correia</p>
+      </footer>
+    </div>
+</body>
+</html>

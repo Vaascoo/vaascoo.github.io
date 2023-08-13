@@ -4,16 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>vaascoo</title>
-    <!-- Add any CSS stylesheets or external styles here -->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/font.css">
     <link rel="stylesheet" href="../css/icons.css">
-    <link rel="stylesheet" href="../css/prism.min.css">
-    <script src="../js/prism.min.js"></script>
-    <script src="../js/prism-javascript.min.js"></script>
-    <script>
-      Prism.highlightAll();
-    </script>
+    <link rel="stylesheet" href="../css/highlight.css">
 </head>
 <body>
     <div class="topbar">
@@ -22,14 +16,14 @@
     </div>
     <div class="content-container">
       <section id="Post">
-          <h1>Post 1</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent imperdiet risus eget arcu convallis pellentesque. In eleifend orci lacus, id sagittis purus venenatis at. Etiam quis sem eget neque eleifend sollicitudin id et ipsum. Duis viverra mauris tellus, eu malesuada urna feugiat a. Nam vulputate eros molestie mi iaculis aliquet. Aliquam ullamcorper eleifend lectus et mollis. Etiam erat enim, consequat a orci at, vehicula dignissim nunc. Proin sit amet elit tincidunt dui tincidunt vehicula sit amet sed eros.</p>
-            <pre class="code-block">
-<code class="language-javascript">
-const greeting = "Hello, world!"
-console.log(greeting);
-</code>
-            </pre>
+        <h1>Post 1 title</h1>
+<h2>Post 1 subtitle</h2>
+<p>some content</p>
+<h3>Third title</h3>
+<p>content content content</p>
+<div class="codehilite"><pre><span></span><code><span class="k">def</span> <span class="nf">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span> <span class="k">else</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorial</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
       </section>
       <footer>
           <p>&lt;gpg key&gt;</p>
